@@ -70,16 +70,16 @@ button {
 }
 .question-offers button {
   margin-top: 10px;
+  margin-bottom: 5px;
 }
 .offer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
+  grid-gap: 55px;
 }
 .see-offer {
   background-color: mediumaquamarine;
   padding: 50px;
-  margin-bottom: 5px;
 }
 form input {
   border: 2px solid #e02c6d;
