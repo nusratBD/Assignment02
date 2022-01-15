@@ -5,6 +5,9 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+p {
+  text-align: justify;
+}
 .container {
   width: 80%;
   margin: 0 auto;
@@ -177,7 +180,7 @@ form textarea {
 /* 1. upto 767px width */
 @media screen and (max-width: 767px) {
   .container {
-    width: 100%;
+    width: 90%;
     margin: 0;
   }
   .start {
