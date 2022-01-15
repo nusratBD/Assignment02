@@ -193,9 +193,6 @@ form textarea {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
-  .question-offers {
-    width: 60%;
-  }
 }
 /* 2. upto 414px */
 @media screen and (max-width: 414px) {
