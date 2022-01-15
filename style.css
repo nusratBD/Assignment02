@@ -154,7 +154,7 @@ form textarea {
 /* Medium Device(768-1024) */
 @media screen and (max-width: 1024px) {
   .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   .start {
@@ -180,7 +180,7 @@ form textarea {
 /* 1. upto 767px width */
 @media screen and (max-width: 767px) {
   .container {
-    width: 90%;
+    width: 100%;
     margin: 0;
   }
   .start {
