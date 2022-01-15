@@ -4,8 +4,6 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-}
-p {
   text-align: justify;
 }
 .container {
@@ -155,7 +153,6 @@ form textarea {
 @media screen and (max-width: 1024px) {
   .container {
     width: 100%;
-    margin: 20px;
   }
   .start {
     grid-template-columns: repeat(1, 1fr);
