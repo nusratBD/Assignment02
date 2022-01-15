@@ -155,7 +155,7 @@ form textarea {
 @media screen and (max-width: 1024px) {
   .container {
     width: 100%;
-    margin: 0 auto;
+    margin: 20px;
   }
   .start {
     grid-template-columns: repeat(1, 1fr);
@@ -181,7 +181,7 @@ form textarea {
 @media screen and (max-width: 767px) {
   .container {
     width: 100%;
-    margin: 0;
+    margin: 10px;
   }
   .start {
     grid-template-columns: repeat(1, 1fr);
