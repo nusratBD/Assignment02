@@ -183,14 +183,39 @@ form textarea {
   .collections {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
+    justify-content: space-around;
+    column-gap: 0;
   }
   .question-offers {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
+}
+@media only screen and (max-width: 500px) {
+  .start {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    display: wrap;
+  }
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+    column-gap: 0;
+  }
+  .question-offers {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .offer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
   .footer {
-    width: 100%;
+    width: 125%;
   }
 }
