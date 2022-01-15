@@ -175,7 +175,7 @@ form textarea {
 }
 /* Small Devices */
 /* 1. upto 767px width */
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .container {
     width: 100%;
     margin: 10px;
@@ -192,7 +192,7 @@ form textarea {
   }
 }
 /* 2. upto 414px */
-@media screen and (max-width: 414px) {
+@media only screen and (max-width: 414px) {
   .footer,
   .collections,
   .question-offers {
@@ -200,7 +200,7 @@ form textarea {
   }
 }
 /* 3. upto 411px */
-@media screen and (max-width: 411px) {
+@media only screen and (max-width: 411px) {
   .footer,
   .collections,
   .question-offers {
@@ -208,13 +208,13 @@ form textarea {
   }
 }
 /* 4. upto 375px */
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   .container {
     width: 100%;
   }
 }
 /* 5. upto 320px */
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   .footer,
   .collections,
   .question-offers {
@@ -222,7 +222,7 @@ form textarea {
   }
 }
 /* 6. upto 280px */
-@media screen and (max-width: 280px) {
+@media only screen and (max-width: 280px) {
   .footer,
   .collections,
   .question-offers {
