@@ -78,8 +78,8 @@ button {
   justify-items: start;
 }
 .question-offers button {
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .offer {
   display: grid;
@@ -87,12 +87,25 @@ button {
   grid-gap: 55px;
 }
 .see-offer {
-  background-color: mediumaquamarine;
-  padding: 50px;
+  background-color: #e02c6d;
+  padding: 40px;
+  text-align: center;
+}
+.see-offer div {
+  display: none;
+  /* position: absolute; */
+  width: 80px;
+}
+.see-offer:hover h3 {
+  display: none;
+}
+.see-offer:hover div {
+  display: block;
 }
 .see-offer:hover {
   transform: scale(1.2);
   transition: transform 0.5s ease-in;
+  background-color: #fb8200;
 }
 form input {
   border: 2px solid #e02c6d;
