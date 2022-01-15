@@ -216,6 +216,6 @@ form textarea {
     grid-template-columns: repeat(1, 1fr);
   }
   .footer {
-    width: 125%;
+    clear: none|left|right|both|initial|inherit;
   }
-}
+
