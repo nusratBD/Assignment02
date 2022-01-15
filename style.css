@@ -5,12 +5,16 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
-.start,
-.collections {
-  margin-bottom: 100px;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 .heading {
   text-align: center;
+}
+.start,
+.collections {
+  margin-bottom: 100px;
 }
 .fa-star,
 .fa-star-half-alt {
@@ -35,10 +39,7 @@ button {
   font-weight: bold;
 }
 /* Large Device(1025-up) */
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
+/* 1. Start Journey */
 .start {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -48,6 +49,7 @@ button {
 .start h1 {
   font-size: 3em;
 }
+/* 2. Collections */
 .collections {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -78,15 +80,29 @@ button {
   color: #787885;
   font-weight: bold;
 }
+/* 3. Question & Offers */
 .question-offers {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: start;
 }
+/* 4. Question */
+form input {
+  border: 2px solid #e02c6d;
+  border-radius: 10px;
+  width: 100%;
+  height: 25px;
+}
+form textarea {
+  border: 2px solid #e02c6d;
+  border-radius: 10px;
+  width: 100%;
+}
 .question-offers button {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+/* 5. Offer */
 .offer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -101,6 +117,11 @@ button {
   display: none;
   width: 80px;
 }
+.see-offer:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in;
+  background-color: #fb8200;
+}
 .see-offer:hover h3 {
   display: none;
 }
@@ -109,22 +130,7 @@ button {
   font-weight: bold;
   color: white;
 }
-.see-offer:hover {
-  transform: scale(1.2);
-  transition: transform 0.5s ease-in;
-  background-color: #fb8200;
-}
-form input {
-  border: 2px solid #e02c6d;
-  border-radius: 10px;
-  width: 100%;
-  height: 25px;
-}
-form textarea {
-  border: 2px solid #e02c6d;
-  border-radius: 10px;
-  width: 100%;
-}
+/* 6. Footer */
 .footer {
   height: 150px;
   background-color: rgb(1, 1, 41);
@@ -167,8 +173,8 @@ form textarea {
     margin-bottom: 50px;
   }
 }
-
-/* Small Device(upto 767px) */
+/* Small Devices */
+/* 1. upto 767px width */
 @media screen and (max-width: 767px) {
   .container {
     width: 100%;
@@ -185,7 +191,7 @@ form textarea {
     justify-items: center;
   }
 }
-/* Mini device upto 414 */
+/* 2. upto 414px */
 @media screen and (max-width: 414px) {
   .footer,
   .collections,
@@ -193,6 +199,7 @@ form textarea {
     width: 125%;
   }
 }
+/* 3. upto 411px */
 @media screen and (max-width: 411px) {
   .footer,
   .collections,
@@ -200,11 +207,13 @@ form textarea {
     width: 100%;
   }
 }
+/* 4. upto 375px */
 @media screen and (max-width: 375px) {
   .container {
     width: 100%;
   }
 }
+/* 5. upto 320px */
 @media screen and (max-width: 320px) {
   .footer,
   .collections,
@@ -212,6 +221,7 @@ form textarea {
     width: 141%;
   }
 }
+/* 6. upto 280px */
 @media screen and (max-width: 280px) {
   .footer,
   .collections,
