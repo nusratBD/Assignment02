@@ -1,10 +1,16 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Fira+Sans+Condensed:ital@1&family=Fira+Sans:ital@1&family=Lobster&family=Poppins:wght@400;500&display=swap");
 /* Common Styles */
 body {
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 .start,
 .collections {
   margin-bottom: 100px;
+}
+.heading {
+  text-align: center;
 }
 .fa-star,
 .fa-star-half-alt {
@@ -93,7 +99,6 @@ button {
 }
 .see-offer div {
   display: none;
-  /* position: absolute; */
   width: 80px;
 }
 .see-offer:hover h3 {
@@ -101,6 +106,8 @@ button {
 }
 .see-offer:hover div {
   display: block;
+  font-weight: bold;
+  color: white;
 }
 .see-offer:hover {
   transform: scale(1.2);
@@ -138,7 +145,7 @@ form textarea {
 /* Medium Device(768-1024) */
 @media screen and (max-width: 1024px) {
   .container {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
   }
   .start {
@@ -186,10 +193,15 @@ form textarea {
     width: 125%;
   }
 }
-@media screen and (width: 411px) {
+@media screen and (max-width: 411px) {
   .footer,
   .collections,
   .question-offers {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
     width: 100%;
   }
 }
@@ -200,7 +212,7 @@ form textarea {
     width: 141%;
   }
 }
-@media screen and (max-width: 240px) {
+@media screen and (max-width: 280px) {
   .footer,
   .collections,
   .question-offers {
