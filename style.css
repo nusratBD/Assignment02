@@ -42,13 +42,22 @@ button {
 .start h1 {
   font-size: 3em;
 }
-
-#start-img {
-  width: 80%;
-}
 .collections {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+.collection-img {
+  overflow: hidden;
+  width: 309px;
+  height: 261px;
+}
+.collection-img img {
+  width: 309px;
+  height: 261px;
+}
+.collection-img:hover img {
+  transform: scale(1.3);
+  transition: transform 1s ease-in;
 }
 .collection-name {
   font-size: 1.5em;
@@ -80,6 +89,10 @@ button {
 .see-offer {
   background-color: mediumaquamarine;
   padding: 50px;
+}
+.see-offer:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in;
 }
 form input {
   border: 2px solid #e02c6d;
@@ -116,11 +129,9 @@ form textarea {
     margin: 0 auto;
   }
   .start {
+    grid-template-columns: repeat(1, 1fr);
     padding: 10px;
-    justify-items: stretch;
-  }
-  #start-img {
-    width: 70%;
+    justify-items: center;
   }
   .collections {
     display: grid;
@@ -137,4 +148,49 @@ form textarea {
   }
 }
 
-/* Small Device(upto 767) */
+/* Small Device(upto 767px) */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+  .start {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+    justify-items: center;
+  }
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
+/* Mini device upto 414 */
+@media screen and (max-width: 414px) {
+  .footer,
+  .collections,
+  .question-offers {
+    width: 125%;
+  }
+}
+@media screen and (width: 411px) {
+  .footer,
+  .collections,
+  .question-offers {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer,
+  .collections,
+  .question-offers {
+    width: 141%;
+  }
+}
+@media screen and (max-width: 240px) {
+  .footer,
+  .collections,
+  .question-offers {
+    width: 186%;
+  }
+}
