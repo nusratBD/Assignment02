@@ -38,7 +38,7 @@ button {
   border: none;
   font-weight: bold;
 }
-/* Large Device(1025-up) */
+/* Large Device(1025px-upper) */
 /* 1. Start Journey */
 .start {
   display: grid;
@@ -154,7 +154,7 @@ form textarea {
   padding: 0;
   margin: 0;
 }
-/* 1024px */
+/* Maximum 1024px width */
 @media only screen and (max-width: 1024px) {
   .start {
     display: grid;
@@ -172,7 +172,7 @@ form textarea {
     justify-items: center;
   }
 }
-/* 767px */
+/* Maximum 767px width*/
 @media only screen and (max-width: 767px) {
   .start {
     display: grid;
@@ -193,6 +193,7 @@ form textarea {
     justify-items: center;
   }
 }
+/* Maximum 500px width */
 @media only screen and (max-width: 500px) {
   .start {
     display: grid;
