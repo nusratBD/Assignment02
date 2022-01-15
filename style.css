@@ -90,6 +90,9 @@ button {
   justify-items: start;
 }
 /* 4. Question */
+.question p {
+  font-weight: bold;
+}
 form input {
   border: 2px solid #e02c6d;
   border-radius: 10px;
@@ -201,8 +204,6 @@ form textarea {
   .collections {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    justify-content: space-around;
-    column-gap: 0;
   }
   .question-offers {
     display: grid;
